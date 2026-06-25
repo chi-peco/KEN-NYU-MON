@@ -169,6 +169,7 @@ section{padding:80px 6vw}
 .apply-section .section-eyebrow{color:#fb923c}
 .apply-section .section-lead{color:#fdba74}
 .apply-cards{display:grid;grid-template-columns:2fr 1fr 1fr;gap:20px;max-width:860px;}
+.nextstep-card{background:linear-gradient(135deg,rgba(249,115,22,.25) 0%,rgba(194,65,12,.2) 100%);border:1.5px solid #fb923c !important;}
 .apply-card{border-radius:16px;padding:28px 24px;border:1.5px solid rgba(255,255,255,.1);}
 .apply-card.main{background:var(--green);border-color:transparent;}
 .apply-card .method{font-size:.68rem;font-weight:800;letter-spacing:.15em;color:rgba(255,255,255,.7);margin-bottom:10px;}
@@ -228,7 +229,7 @@ footer strong{color:#fcd9b0}
   .target-groups{grid-template-columns:1fr}
   .course-cols{grid-template-columns:1fr}
   .photo-mosaic{grid-template-columns:1fr 1fr;}
-  .apply-cards{grid-template-columns:1fr}
+  .apply-cards{display:flex;flex-direction:column;}
   .footer-row{flex-direction:column;gap:16px}
   .nav-tel{display:none}
   .data-sub{flex-direction:column}
@@ -256,6 +257,13 @@ footer strong{color:#fcd9b0}
       <a href="#apply" class="btn-primary">申し込む</a>
       <a href="#venue" class="btn-outline">会場・日程を見る</a>
     </div>
+    <a href="https://chi-peco.github.io/KEN-SINIA/" target="_blank" style="display:inline-flex;align-items:center;gap:12px;margin-top:22px;background:rgba(249,115,22,.22);border:2px solid #fb923c;border-radius:12px;padding:14px 22px;text-decoration:none;max-width:460px;">
+      <span style="font-size:1.4rem;">🔜</span>
+      <span style="line-height:1.55;">
+        <span style="display:block;font-size:.85rem;font-weight:900;color:#fff;">シニア事業（初任者研修）も募集中</span>
+        <span style="display:block;font-size:.75rem;color:#fb923c;font-weight:700;margin-top:3px;">令和8年度 シニア人材事業｜千葉県介護人材確保対策事業 →</span>
+      </span>
+    </a>
   </div>
   <div class="hero-stats">
     <div class="stat"><div class="stat-num">98<span>%</span></div><div class="stat-label">満足度<br>（アンケートより）</div></div>
@@ -461,9 +469,8 @@ footer strong{color:#fcd9b0}
     <table class="vtable">
       <thead><tr><th>地域</th><th>会場・アクセス</th><th>日程・時間</th></tr></thead>
       <tbody>
-        <tr><td>千葉</td><td>千葉市 生涯学習センター<br><small>〒260-0045 千葉市中央区弁天3-7-7</small><br><small>JR千葉駅から徒歩9分</small><br><a href="https://maps.google.com/?q=千葉市中央区弁天3-7-7" target="_blank" class="map-link">Googleマップで見る</a></td><td>1日目 R8.9.4（金）10:00〜15:40<br>2日目 R8.9.11（金）10:00〜15:40</td></tr>
         <tr><td>香取海匝</td><td>旭市 海上公民館<br><small>旭市高生1</small><br><small>JR飯岡駅から徒歩13分</small><br><a href="https://maps.google.com/?q=旭市高生1" target="_blank" class="map-link">Googleマップで見る</a></td><td>R8.10.25（日）10:00〜15:40</td></tr>
-        <tr><td>市原</td><td>市原市 市民会館<br><small>市原市惣社1-1-1</small><br><small>JR五井駅からバス7分</small><br><a href="https://maps.google.com/?q=市原市惣社1-1-1" target="_blank" class="map-link">Googleマップで見る</a></td><td>1日目 R8.10.3（土）10:00〜15:40<br>2日目 R8.10.17（土）13:00〜16:00 <span class="tag">技術勉強会</span><br>3日目 R8.10.27（火）時間調整中 <span class="tag">施設見学会</span></td></tr>
+        <tr><td>市原</td><td>市原市 市民会館<br><small>市原市惣社1-1-1</small><br><small>JR五井駅からバス7分</small><br><a href="https://maps.google.com/?q=市原市惣社1-1-1" target="_blank" class="map-link">Googleマップで見る</a></td><td>1日目 R8.10.3（土）10:00〜15:40<br>2日目 R8.10.17（土）13:00〜16:00 <span class="tag">技術勉強会</span><br>3日目 R8.10.27（火）am10:00〜pm14:00（予定） <span class="tag">施設見学会</span></td></tr>
         <tr><td>印旛</td><td>白井市 白井市役所東庁舎<br><small>白井市復1123</small><br><small>北総線白井駅から徒歩9分</small><br><a href="https://maps.google.com/?q=白井市復1123" target="_blank" class="map-link">Googleマップで見る</a></td><td>1日目 R8.11.3（火）10:00〜15:00<br>2日目 R8.11.15（日）10:00〜14:00 <span class="tag">AM技術勉強会</span> <span class="tag">PM就職応援フェア</span></td></tr>
         <tr><td>山武長生夷隅</td><td>茂原市 総合市民センター<br><small>茂原市町保13-20</small><br><small>JR茂原駅から徒歩5分</small><br><a href="https://maps.google.com/?q=茂原市町保13-20" target="_blank" class="map-link">Googleマップで見る</a></td><td>R8.11.8（日）10:00〜15:40</td></tr>
         <tr><td>東葛南部</td><td>船橋市 勤労市民センター<br><small>船橋市本町4-19-6</small><br><small>JR船橋駅から徒歩5分</small><br><a href="https://maps.google.com/?q=船橋市本町4-19-6" target="_blank" class="map-link">Googleマップで見る</a></td><td>R8.1.9（土）10:00〜15:40<br>R8.2.6（土）9:30〜14:00 <span class="tag">AM技術勉強会</span> <span class="tag">PM合同就職説明会PORT</span></td></tr>
@@ -473,11 +480,15 @@ footer strong{color:#fcd9b0}
   </div>
   <div class="venue-panel" id="tab-nyumon">
     <div style="overflow-x:auto">
+    <div style="background:#fff7ed;border:2px solid #fb923c;border-radius:10px;padding:14px 20px;margin-bottom:18px;font-size:.9rem;font-weight:700;color:#92400e;line-height:1.7;">
+      ✅ 各会場、1日目のみのご参加も可能です。<br>
+      <span style="font-weight:400;font-size:.83rem;">・4日間とも参加希望の方が優先されることもあります。<br>・1日目の受講後に、2日目以降の追加申込もできます。</span>
+    </div>
     <table class="vtable">
-      <thead><tr><th>地域</th><th>会場・アクセス</th><th>日程（全4日間）9:30〜</th></tr></thead>
+      <thead><tr><th>地域</th><th>会場・アクセス</th><th>日程　9:30〜</th></tr></thead>
       <tbody>
-        <tr><td>印旛</td><td>成田市 勤労会館<br><small>成田市不動ケ岡1113-1</small><br><small>JR成田駅から徒歩9分</small><br><a href="https://maps.google.com/?q=成田市不動ケ岡1113-1" target="_blank" class="map-link">Googleマップで見る</a></td><td>R8.7.25（土）9:30〜16:20<br>R8.8.1（土）9:30〜16:10<br>R8.8.7（金）9:30〜15:40<br>R8.8.22（土）9:30〜15:40</td></tr>
-        <tr><td>千葉</td><td>千葉市 千葉県立犢橋高等学校<br><small>千葉市花見川区千種町381-1</small><br><small>JR稲毛駅からバス23分</small><br><a href="https://maps.google.com/?q=千葉市花見川区千種町381-1" target="_blank" class="map-link">Googleマップで見る</a></td><td>R8.8.24（月）9:30〜16:20<br>R8.8.25（火）9:30〜16:10<br>R8.8.26（水）9:30〜15:40<br>R8.8.27（木）9:30〜15:40</td></tr>
+        <tr><td>千葉</td><td>千葉市 生涯学習センター<br><small>〒260-0045 千葉市中央区弁天3-7-7</small><br><small>JR千葉駅から徒歩9分</small><br><a href="https://maps.google.com/?q=千葉市中央区弁天3-7-7" target="_blank" class="map-link">Googleマップで見る</a></td><td>R8.9.4（金）9:30〜16:20<br>R8.9.11（金）9:30〜16:10<br>R8.9.17（木）9:30〜15:40<br>R8.9.24（木）9:30〜15:40</td></tr>
+                <tr><td>印旛</td><td>成田市 勤労会館<br><small>成田市不動ケ岡1113-1</small><br><small>JR成田駅から徒歩9分</small><br><a href="https://maps.google.com/?q=成田市不動ケ岡1113-1" target="_blank" class="map-link">Googleマップで見る</a></td><td>R8.7.25（土）9:30〜16:20<br>R8.8.1（土）9:30〜16:10<br>R8.8.7（金）9:30〜15:40<br>R8.8.22（土）9:30〜15:40</td></tr>
         <tr><td>君津</td><td>木更津市 金田地域交流センター<br><small>木更津市金田東6-11-1</small><br><small>JR木更津駅からバス20分</small><br><a href="https://maps.google.com/?q=木更津市金田東6-11-1" target="_blank" class="map-link">Googleマップで見る</a></td><td>R8.9.26（土）9:30〜16:20<br>R8.10.2（金）9:30〜16:10<br>R8.10.9（金）9:30〜15:40<br>R8.10.16（金）9:30〜15:40</td></tr>
         <tr><td>山武長生夷隅</td><td>東金市 東金中央コミュニティーセンター<br><small>東金市東岩崎1-20</small><br><small>JR東金駅から徒歩4分</small><br><a href="https://maps.google.com/?q=東金市東岩崎1-20" target="_blank" class="map-link">Googleマップで見る</a></td><td>R8.10.31（土）9:30〜16:20<br>R8.11.6（金）9:30〜16:10<br>R8.11.14（土）9:30〜15:40<br>R8.11.19（木）9:30〜15:40</td></tr>
         <tr><td>東葛南部</td><td>八千代市 八千代台東南公民館<br><small>八千代市八千代台南1-11-6</small><br><small>京成本線八千代台駅から徒歩3分</small><br><a href="https://maps.google.com/?q=八千代市八千代台南1-11-6" target="_blank" class="map-link">Googleマップで見る</a></td><td>R8.12.1（火）9:30〜16:20<br>R8.12.10（木）9:30〜16:10<br>R8.12.15（火）9:30〜15:40<br>R8.12.22（火）9:30〜15:40</td></tr>
@@ -494,24 +505,35 @@ footer strong{color:#fcd9b0}
     <p class="section-lead">定員は各会場40名（先着）。お早めにお申し込みください。雇用保険受給中の方は、求職活動実績になります。</p>
   </div>
   <div class="apply-cards reveal">
-    <div class="apply-card main">
+    <div class="apply-card main" style="order:1;">
       <div class="method">WEB FORM</div>
       <div class="val">Googleフォームから<br>24時間申込できます</div>
       <div class="note">スマートフォンからも簡単に申込できます</div>
       <a href="https://forms.gle/KNpfVeayjKwNjrd3A" target="_blank" class="apply-btn">申込フォームを開く</a>
     </div>
-    <div class="apply-card">
+    <div class="apply-card nextstep-card" style="order:2;">
+      <a href="https://chi-peco.github.io/KEN-SINIA/" target="_blank" style="display:flex;align-items:center;justify-content:space-between;gap:16px;text-decoration:none;height:100%;">
+        <div>
+          <p style="font-size:.68rem;font-weight:800;letter-spacing:.15em;color:#fb923c;margin-bottom:10px;">NEXT STEP</p>
+          <p style="font-size:1rem;font-weight:900;color:#fff;line-height:1.5;margin-bottom:6px;">シニア事業（初任者研修）も募集中</p>
+          <p style="font-size:.78rem;color:#fcd9b0;line-height:1.6;">令和8年度 シニア人材事業｜千葉県介護人材確保対策事業</p>
+        </div>
+        <span style="font-size:1.8rem;color:#fb923c;flex-shrink:0;">→</span>
+      </a>
+    </div>
+    <div class="apply-card" style="order:3;">
       <div class="method">TEL</div>
       <div class="val">0120-86-5124</div>
       <div class="note">受付 9:00〜17:00<br>木曜・日曜 休業</div>
     </div>
-    <div class="apply-card">
+    <div class="apply-card" style="order:4;">
       <div class="method">FAX</div>
       <div class="val">043-306-8521</div>
       <div class="note">折り返しお電話いたします</div>
     </div>
   </div>
   <div class="apply-note reveal">委託元：千葉県　／　後援：千葉労働局　／　受託運営：ほっとスペース稲毛ペコリーノ（社会福祉法人初穂会）<br>※研修時間は会場・日程により異なります。詳しくはお問合せください。</div>
+
 </section>
 
 <footer>
